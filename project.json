@@ -1,0 +1,8 @@
+{
+  "name": "paragon-lambda",
+  "description": "microservices for paragon",
+  "memory": 128,
+  "timeout": 5,
+  "role": "arn:aws:iam::113089656339:role/paragon-lambda_lambda_function",
+  "environment": {}
+}
