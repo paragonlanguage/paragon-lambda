@@ -1,17 +1,17 @@
-var test = require('ava')
-var hello = require('./index')
+import test from 'ava'
+import hello from './index'
 
-test('test hello', function (t) {
-  var event = {
+test('test hello', t => {
+  const event = {
     name: 'Tony'
   }
-  var context = {}
-  var callback = function (err, message) {
+  const context = {}
+  const callback = (err, message) => {
     if (err) {
       throw err
     }
-    var expected = 'Hello Tony'
-    var computed = message
+    const expected = 'Hello Tony'
+    const computed = message
     t.is(expected, computed)
   }
 

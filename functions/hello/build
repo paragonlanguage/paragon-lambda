@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+IFS=$'\n\t'
+
+declare -r webpack_path="./../../node_modules/.bin/webpack"
+declare -r webpack_config_path="./../../webpack.config.js"
+
+webpack_build () {
+    "${webpack_path}" --config "${webpack_config_path}"
+}
+
+main () {
+    webpack_build
+}
