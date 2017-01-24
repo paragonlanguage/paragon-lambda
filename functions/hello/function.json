@@ -1,3 +1,7 @@
 {
-  "description": "function that does hello world"
+  "description": "function that does hello world",
+  "hooks": {
+    "build": "../../node_modules/.bin/webpack --config ../../webpack.config.js",
+    "clean": "rm -fr lib"
+  }
 }
