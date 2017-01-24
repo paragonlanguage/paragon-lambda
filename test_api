@@ -1,0 +1,6 @@
+curl -s --user 'api:key-8e87b0928f5b659f2a66c44ffbcff6e4' \
+    https://api.mailgun.net/v3/sandbox063c6e8db72945e19ef45d2a9bf3c87d.mailgun.org/messages \
+    -F from='Excited User <mailgun@sandbox063c6e8db72945e19ef45d2a9bf3c87d.mailgun.org>' \
+    -F to=tonyfu.dev@gmail.com \
+    -F subject='Hello' \
+    -F text='Testing some Mailgun awesomness!'
