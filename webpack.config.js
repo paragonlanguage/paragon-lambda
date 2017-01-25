@@ -16,21 +16,6 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        query: {
-          presets: [
-            'stage-0',
-            'latest'
-          ],
-          plugins: [
-            'transform-promise-to-bluebird',
-            ['transform-async-to-module-method', {
-              module: 'bluebird',
-              method: 'coroutine'
-            }],
-            'transform-runtime'
-          ],
-          cacheDirectory: true
-        },
         exclude: [/node_modules/]
       },
       {

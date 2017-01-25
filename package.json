@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava"
   },
   "repository": {
     "type": "git",
@@ -31,7 +31,16 @@
     "webpack": "beta"
   },
   "dependencies": {
-    "mailgun-js": "^0.8.0",
-    "node-uuid": "^1.4.7"
+    "mailgen": "^2.0.2",
+    "mailgun-js": "^0.8.0"
+  },
+  "engines": {
+    "node": ">=6.9"
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
   }
 }
