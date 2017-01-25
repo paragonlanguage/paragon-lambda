@@ -59,8 +59,8 @@ const email = {
       ],
       columns: {
         customWidth: {
-          item: '20%',
-          info: '15%'
+          item: '50%',
+          info: '50%'
         },
         customAlignment: {
           item: 'left',

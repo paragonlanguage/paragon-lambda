@@ -1,5 +1,5 @@
 {
-  "description": "function that does hello world",
+  "description": "function that notify paragon staff",
   "hooks": {
     "build": "./build",
     "clean": "./clean"

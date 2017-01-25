@@ -8,9 +8,6 @@ module.exports = {
     filename: 'index.js',
     libraryTarget: 'commonjs2'
   },
-  externals: {
-    'aws-sdk': 'aws-sdk'
-  },
   module: {
     rules: [
       {
@@ -28,13 +25,6 @@ module.exports = {
     new Webpack.LoaderOptionsPlugin({
       minimize: true,
       debug: false
-    }),
-    new Webpack.optimize.UglifyJsPlugin({
-      compress: { warnings: false },
-      output: {
-        comments: false
-      },
-      mangle: false
     })
   ]
 }
