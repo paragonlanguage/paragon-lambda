@@ -28,11 +28,14 @@
     "babel-preset-stage-0": "^6.16.0",
     "bluebird": "^3.4.6",
     "json-loader": "^0.5.4",
+    "raw-loader": "^0.5.1",
     "webpack": "beta"
   },
   "dependencies": {
     "mailgen": "^2.0.2",
-    "mailgun-js": "^0.8.0"
+    "mailgun-js": "^0.8.0",
+    "nodemailer": "^2.7.2",
+    "nodemailer-mailgun-transport": "^1.2.4"
   },
   "engines": {
     "node": ">=6.9"

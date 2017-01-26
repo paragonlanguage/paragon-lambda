@@ -76,8 +76,8 @@ function generateEmail () {
       }
     }
   }
-
-  return new Mailgen(option).generate(content)
+  const mailgen = new Mailgen(option)
+  return mailgen.generate(content)
 }
 
 export default generateEmail
