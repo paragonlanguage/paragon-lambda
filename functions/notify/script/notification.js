@@ -16,8 +16,12 @@ const content = {
     table: {
       data: [
         {
-          item: 'Name',
-          info: '{{ name }}'
+          item: 'First Name',
+          info: '{{ firstName }}'
+        },
+        {
+          item: 'Last Name',
+          info: '{{ lastName }}'
         },
         {
           item: 'Mobile phone',
@@ -75,4 +79,8 @@ const content = {
 }
 const mailgen = new Mailgen(option)
 const html = mailgen.generate(content)
-require('fs').writeFileSync('./../src/template.html', html, 'utf8')
+
+require('fs').writeFileSync('./../src/notification.js', 'export default `', 'utf8')
+require('fs').appendFileSync('./../src/notification.js', html, 'utf8')
+require('fs').appendFileSync('./../src/notification.js', '`', 'utf8')
+
