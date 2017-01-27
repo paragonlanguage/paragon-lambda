@@ -1,19 +1,35 @@
 import test from 'ava'
-import hello from './index'
+import proxyquire from 'proxyquire'
 
-test('test hello', t => {
-  const event = {
-    name: 'Tony'
+function notifyFactory (studs) {
+  return proxyquire(
+    './index.js',
+    {
+      studs
+    }
+  ).default
+}
+
+test('test notify', t => {
+  const studs = {
+    'request': {
+      post: function (url, body, callback) {
+        callback(null, 'All good')
+      }
+    }
   }
+
+  const notify = notifyFactory(studs)
+  const event = {}
   const context = {}
+
   const callback = (err, message) => {
     if (err) {
       throw err
     }
-    const expected = 'Hello Tony'
+    const expected = 'All good'
     const computed = message
     t.is(expected, computed)
   }
-
-  hello(event, context, callback)
+  notify(event, context, callback)
 })

@@ -1,25 +1,29 @@
-import htmlEmail from './template.html'
+import htmlEmail from './template'
 import request from 'request'
 
 export default (e, ctx, cb) => {
-  const auth = {
+  const apiKey = 'key-8e87b0928f5b659f2a66c44ffbcff6e4'
+  const domain = 'sandbox063c6e8db72945e19ef45d2a9bf3c87d.mailgun.org'
+
+  const body = {
+    form: {
+      from: 'Paragon Language Service [test] <mailgun@sandbox063c6e8db72945e19ef45d2a9bf3c87d.mailgun.org>',
+      to: 'tonyfu.dev@gmail.com',
+      subject: 'Hi, we have got a new inquery',
+      html: htmlEmail
+    },
     auth: {
-      api_key: 'key-8e87b0928f5b659f2a66c44ffbcff6e4',
-      domain: 'sandbox063c6e8db72945e19ef45d2a9bf3c87d.mailgun.org'
+      user: 'api',
+      pass: apiKey
     }
   }
 
-  const nodemailerMailgun = nodemailer.createTransport(mg(auth))
-
-  nodemailerMailgun.sendMail({
-    from: 'Excited User <mailgun@sandbox063c6e8db72945e19ef45d2a9bf3c87d.mailgun.org>',
-    to: 'paragonlanguage@mailinator.com',
-    subject: 'Hey you, awesome!',
-    html: htmlEmail
-  }, function (err, info) {
-    if (err) {
-      throw err
-    }
-    cb(null, 'success')
-  })
+  request
+    .post(`https://api.mailgun.net/v3/${domain}/messages`, body, (err, response) => {
+      if (err) {
+        cb(err, null)
+      } else {
+        cb(null, response)
+      }
+    })
 }
