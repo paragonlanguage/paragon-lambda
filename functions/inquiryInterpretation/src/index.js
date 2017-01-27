@@ -16,11 +16,10 @@ export default (e, ctx, cb) => {
     email: notSupplied,
     companyName: notSupplied,
     companyNumber: notSupplied,
-    documentType: notSupplied,
-    wordCount: notSupplied,
     fromLanguage: notSupplied,
     toLanguage: notSupplied,
-    timeRequired: notSupplied
+    fromDate: notSupplied,
+    toDate: notSupplied
   }
 
   const data = Object.assign({}, defaultValues, e)
@@ -34,7 +33,7 @@ export default (e, ctx, cb) => {
   const notificationBody = {
     form: {
       from: 'Paragon Language Service [test] <mailgun@sandbox063c6e8db72945e19ef45d2a9bf3c87d.mailgun.org>',
-      to: 'tonyfu.dev@gmail.com',
+      to: 'tonyfu.dev@gmail.com,paragonlanguege@mailinator.com',
       subject: `Hi, we have got a new inquery from ${data.firstName} ${data.lastName}`,
       html: notificationHtml
     },
@@ -47,7 +46,7 @@ export default (e, ctx, cb) => {
   const confirmationBody = {
     form: {
       from: 'Paragon Language Service [test] <mailgun@sandbox063c6e8db72945e19ef45d2a9bf3c87d.mailgun.org>',
-      to: 'tonyfu.dev@gmail.com',
+      to: 'tonyfu.dev@gmail.com,paragonlanguege@mailinator.com',
       subject: 'Thank you for choosing Paragon',
       html: confirmationHtml
     },

@@ -44,14 +44,6 @@ const content = {
           info: '{{ companyNumber }}'
         },
         {
-          item: 'Document type',
-          info: '{{ documentType }}'
-        },
-        {
-          item: 'Word count',
-          info: '{{ wordCount }}'
-        },
-        {
           item: 'From language',
           info: '{{ fromLanguage }}'
         },
@@ -60,8 +52,12 @@ const content = {
           info: '{{ toLanguage }}'
         },
         {
-          item: 'Time required',
-          info: '{{ timeRequired }}'
+          item: 'From the date',
+          info: '{{ fromDate }}'
+        },
+        {
+          item: 'To the date',
+          info: '{{ toDate }}'
         }
       ],
       columns: {
