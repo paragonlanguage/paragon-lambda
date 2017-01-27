@@ -1,0 +1,7 @@
+{
+  "description": "function that respond to translation inquiry",
+  "hooks": {
+    "build": "./build",
+    "clean": "./clean"
+  }
+}

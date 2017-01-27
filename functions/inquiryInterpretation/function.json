@@ -1,5 +1,5 @@
 {
-  "description": "function that notify paragon staff",
+  "description": "function that respond to interpretation inquiry",
   "hooks": {
     "build": "./build",
     "clean": "./clean"

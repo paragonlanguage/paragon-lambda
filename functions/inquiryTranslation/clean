@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+IFS=$'\n\t'
+
+declare -r output_path="lib"
+
+clean_up () {
+    rm -fr "${output_path}"
+}
+
+main () {
+    clean_up
+}
+
+main
