@@ -7,21 +7,23 @@ import templateSettings from 'lodash/templateSettings'
 export default (e, ctx, cb) => {
   const apiKey = 'key-8e87b0928f5b659f2a66c44ffbcff6e4'
   const domain = 'sandbox063c6e8db72945e19ef45d2a9bf3c87d.mailgun.org'
-  const data = {
-    firstName: 'Tony',
-    lastName: 'Fu',
-    mobilePhone: '0441234123',
-    homePhone: '02-1234-1231',
-    email: 'tonyfu@xman.com',
-    companyName: 'xmen',
-    companyNumber: '02-4231-4321',
-    documentType: 'suicide note',
-    wordCount: '3000',
-    fromLanguage: 'English',
-    toLanguage: 'French',
-    timeRequired: '3 days'
+  const notSupplied = 'Not supplied'
+  const defaultValues = {
+    firstName: notSupplied,
+    lastName: notSupplied,
+    mobilePhone: notSupplied,
+    homePhone: notSupplied,
+    email: notSupplied,
+    companyName: notSupplied,
+    companyNumber: notSupplied,
+    documentType: notSupplied,
+    wordCount: notSupplied,
+    fromLanguage: notSupplied,
+    toLanguage: notSupplied,
+    timeRequired: notSupplied
   }
 
+  const data = Object.assign({}, defaultValues, e)
   templateSettings.interpolate = /{{([\s\S]+?)}}/g
   const compileNotification = template(notificationRaw)
   const notificationHtml = compileNotification(data)
