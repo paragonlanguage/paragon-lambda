@@ -1,3 +1,5 @@
 export default (e, ctx, cb) => {
-  cb(null, 'Hello ' + e.name)
+  console.log(e)
+  console.log(ctx)
+  cb(null, 'Hello ' + e['body-json']['name'])
 }

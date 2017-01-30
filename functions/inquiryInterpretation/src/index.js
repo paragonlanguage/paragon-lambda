@@ -5,8 +5,10 @@ import template from 'lodash/template'
 import templateSettings from 'lodash/templateSettings'
 
 export default (e, ctx, cb) => {
-  const apiKey = 'key-8e87b0928f5b659f2a66c44ffbcff6e4'
-  const domain = 'sandbox063c6e8db72945e19ef45d2a9bf3c87d.mailgun.org'
+  const payload = e['body-json']
+  const options = e['stage-variables']
+  const apiKey = options.mailgunApi
+  const domain = options.mailgunDomain
   const notSupplied = 'Not supplied'
   const defaultValues = {
     firstName: notSupplied,
@@ -22,7 +24,7 @@ export default (e, ctx, cb) => {
     toDate: notSupplied
   }
 
-  const data = Object.assign({}, defaultValues, e)
+  const data = Object.assign({}, defaultValues, payload)
   templateSettings.interpolate = /{{([\s\S]+?)}}/g
   const compileNotification = template(notificationRaw)
   const notificationHtml = compileNotification(data)
