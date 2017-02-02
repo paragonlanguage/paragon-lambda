@@ -38,7 +38,7 @@ export default (e, ctx, cb) => {
       from: `Paragon Language Service <noreply@${domain}>`,
       to: 'paragonlanguage@mailinator.com',
       cc: 'tonyfu.dev@gmail.com',
-      subject: `Hi, we have got a new inquery from ${data.firstName} ${data.lastName}`,
+      subject: `Hi, we have got a new inquery for interpretation from ${data.firstName} ${data.lastName}`,
       html: notificationHtml
     },
     auth: {
