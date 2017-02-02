@@ -62,6 +62,10 @@ const content = {
         {
           item: 'Time required',
           info: '{{ timeRequired }}'
+        },
+        {
+          item: 'File link',
+          info: '{{ fileLink }}'
         }
       ],
       columns: {

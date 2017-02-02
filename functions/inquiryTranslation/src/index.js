@@ -22,7 +22,8 @@ export default (e, ctx, cb) => {
     wordCount: notSupplied,
     fromLanguage: notSupplied,
     toLanguage: notSupplied,
-    timeRequired: notSupplied
+    timeRequired: notSupplied,
+    fileLink: notSupplied
   }
 
   const data = Object.assign({}, defaultValues, payload)
