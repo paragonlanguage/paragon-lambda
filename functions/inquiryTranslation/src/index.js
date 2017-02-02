@@ -50,7 +50,8 @@ export default (e, ctx, cb) => {
   const confirmationBody = {
     form: {
       from: `Paragon Language Service <noreply@${domain}>`,
-      to: 'paragonlanguage@mailinator.com,tonyfu.dev@gmail.com',
+      to: `${data.firstName} <${data.email}>`,
+      cc: 'paragonlanguage@mailinator.com,tonyfu.dev@gmail.com',
       subject: 'Thank you for choosing Paragon',
       html: confirmationHtml
     },
