@@ -29,9 +29,9 @@ export default `
           <tr>
             <td class="email-masthead" style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 25px 0; text-align: center;" align="center">
               <a class="email-masthead_name" href="https://paragonlanguage.com" target="_blank" style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; color: #2F3133; font-size: 16px; font-weight: bold; text-decoration: none; text-shadow: 0 1px 0 white;">
-
+                
                   <img src="https://s3-ap-southeast-2.amazonaws.com/paragon-asset/logo/logo_black.png" class="email-logo" style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; max-height: 50px;">
-
+                
                 </a>
             </td>
           </tr>
@@ -43,188 +43,188 @@ export default `
                 <tr>
                   <td class="content-cell" style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 35px;">
                     <h1 style="margin-top: 0; color: #2F3133; font-size: 19px; font-weight: bold; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box;">Hi,</h1>
-
-                                              <p style="margin-top: 0; color: #74787E; font-size: 16px; line-height: 1.5em; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box;">We have got a new inquiry</p>
-
+                    
+                                              <p style="margin-top: 0; color: #74787E; font-size: 16px; line-height: 1.5em; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box;">We received a new inquiry</p>
+                                          
 
                     <!-- Dictionary -->
-
+                    
 
                     <!-- Table -->
-
+                    
                     <table class="data-wrapper" width="100%" cellpadding="0" cellspacing="0" style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; width: 100%; margin: 0; padding: 35px 0;">
                       <tr>
                         <td colspan="2" style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box;">
                           <table class="data-table" width="100%" cellpadding="0" cellspacing="0" style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; width: 100%; margin: 0;">
                             <tr>
-
+                              
                                 <th width="50%" style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0px 5px; padding-bottom: 8px; border-bottom: 1px solid #EDEFF2; text-align: left;" align="left">
                                   <p style="margin-top: 0; line-height: 1.5em; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; color: #9BA2AB; font-size: 12px; margin: 0;">Item</p>
                                 </th>
-
+                              
                                 <th width="50%" style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0px 5px; padding-bottom: 8px; border-bottom: 1px solid #EDEFF2; text-align: left;" align="left">
                                   <p style="margin-top: 0; line-height: 1.5em; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; color: #9BA2AB; font-size: 12px; margin: 0;">Info</p>
                                 </th>
-
+                              
                             </tr>
-
+                            
                             <tr>
-
+                              
                                 <td style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 10px 5px; color: #74787E; font-size: 15px; line-height: 18px; text-align: left;" align="left">
                                   First Name
                                 </td>
-
+                              
                                 <td style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 10px 5px; color: #74787E; font-size: 15px; line-height: 18px; text-align: left;" align="left">
                                   {{ firstName }}
                                 </td>
-
+                              
                             </tr>
-
+                            
                             <tr>
-
+                              
                                 <td style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 10px 5px; color: #74787E; font-size: 15px; line-height: 18px; text-align: left;" align="left">
                                   Last Name
                                 </td>
-
+                              
                                 <td style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 10px 5px; color: #74787E; font-size: 15px; line-height: 18px; text-align: left;" align="left">
                                   {{ lastName }}
                                 </td>
-
+                              
                             </tr>
-
+                            
                             <tr>
-
+                              
                                 <td style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 10px 5px; color: #74787E; font-size: 15px; line-height: 18px; text-align: left;" align="left">
                                   Mobile phone
                                 </td>
-
+                              
                                 <td style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 10px 5px; color: #74787E; font-size: 15px; line-height: 18px; text-align: left;" align="left">
                                   {{ mobilePhone }}
                                 </td>
-
+                              
                             </tr>
-
+                            
                             <tr>
-
+                              
                                 <td style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 10px 5px; color: #74787E; font-size: 15px; line-height: 18px; text-align: left;" align="left">
                                   Email address
                                 </td>
-
+                              
                                 <td style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 10px 5px; color: #74787E; font-size: 15px; line-height: 18px; text-align: left;" align="left">
                                   {{ email }}
                                 </td>
-
+                              
                             </tr>
-
+                            
                             <tr>
-
+                              
                                 <td style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 10px 5px; color: #74787E; font-size: 15px; line-height: 18px; text-align: left;" align="left">
                                   Company name
                                 </td>
-
+                              
                                 <td style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 10px 5px; color: #74787E; font-size: 15px; line-height: 18px; text-align: left;" align="left">
                                   {{ companyName }}
                                 </td>
-
+                              
                             </tr>
-
+                            
                             <tr>
-
+                              
                                 <td style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 10px 5px; color: #74787E; font-size: 15px; line-height: 18px; text-align: left;" align="left">
                                   Company number
                                 </td>
-
+                              
                                 <td style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 10px 5px; color: #74787E; font-size: 15px; line-height: 18px; text-align: left;" align="left">
                                   {{ companyNumber }}
                                 </td>
-
+                              
                             </tr>
-
+                            
                             <tr>
-
+                              
                                 <td style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 10px 5px; color: #74787E; font-size: 15px; line-height: 18px; text-align: left;" align="left">
                                   From the date
                                 </td>
-
+                              
                                 <td style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 10px 5px; color: #74787E; font-size: 15px; line-height: 18px; text-align: left;" align="left">
                                   {{ fromDate }}
                                 </td>
-
+                              
                             </tr>
-
+                            
                             <tr>
-
+                              
                                 <td style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 10px 5px; color: #74787E; font-size: 15px; line-height: 18px; text-align: left;" align="left">
                                   To the date
                                 </td>
-
+                              
                                 <td style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 10px 5px; color: #74787E; font-size: 15px; line-height: 18px; text-align: left;" align="left">
                                   {{ toDate }}
                                 </td>
-
+                              
                             </tr>
-
+                            
                             <tr>
-
+                              
                                 <td style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 10px 5px; color: #74787E; font-size: 15px; line-height: 18px; text-align: left;" align="left">
                                   Duration
                                 </td>
-
+                              
                                 <td style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 10px 5px; color: #74787E; font-size: 15px; line-height: 18px; text-align: left;" align="left">
                                   {{ duration }}
                                 </td>
-
+                              
                             </tr>
-
+                            
                             <tr>
-
+                              
                                 <td style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 10px 5px; color: #74787E; font-size: 15px; line-height: 18px; text-align: left;" align="left">
                                   Type
                                 </td>
-
+                              
                                 <td style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 10px 5px; color: #74787E; font-size: 15px; line-height: 18px; text-align: left;" align="left">
                                   {{ type }}
                                 </td>
-
+                              
                             </tr>
-
+                            
                             <tr>
-
+                              
                                 <td style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 10px 5px; color: #74787E; font-size: 15px; line-height: 18px; text-align: left;" align="left">
                                   From language
                                 </td>
-
+                              
                                 <td style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 10px 5px; color: #74787E; font-size: 15px; line-height: 18px; text-align: left;" align="left">
                                   {{ fromLanguage }}
                                 </td>
-
+                              
                             </tr>
-
+                            
                             <tr>
-
+                              
                                 <td style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 10px 5px; color: #74787E; font-size: 15px; line-height: 18px; text-align: left;" align="left">
                                   To language
                                 </td>
-
+                              
                                 <td style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 10px 5px; color: #74787E; font-size: 15px; line-height: 18px; text-align: left;" align="left">
                                   {{ toLanguage }}
                                 </td>
-
+                              
                             </tr>
-
+                            
                           </table>
                         </td>
                       </tr>
                     </table>
-
+                    
 
                     <!-- Action -->
-
+                    
 
                     <!-- Support for Gmail Go-To Actions -->
+                    
 
-
-
+                    
 
                     <p style="margin-top: 0; color: #74787E; font-size: 16px; line-height: 1.5em; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box;">
                       Sincerely,

@@ -11,7 +11,7 @@ const option = {
 const content = {
   body: {
     greeting: 'Hi',
-    intro: 'We have got a new inquiry',
+    intro: 'We received a new inquiry',
     signature: 'Sincerely',
     table: {
       data: [

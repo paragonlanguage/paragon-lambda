@@ -3,7 +3,7 @@ const option = {
   theme: 'default',
   product: {
     name: 'Paragon Language Service',
-    link: 'https://paragonlanguage.com',
+    link: 'https://www.paragonlanguage.com',
     copyright: 'Copyright © 2017 Paragon Language Service. All rights reserved.',
     logo: 'https://s3-ap-southeast-2.amazonaws.com/paragon-asset/logo/logo_black.png'
   }
@@ -12,7 +12,7 @@ const content = {
   body: {
     greeting: 'Hi {{ firstName }}',
     intro: ['Your inquery has been lodged.', 'One of our staff will contact you shortly.'],
-    outro: ['Need help, or have questions?', 'Please give us a call on 0123 2345'],
+    outro: ['Need help, or have questions?', 'Please give us a call on (02) 8089 3149'],
     signature: 'Sincerely'
   }
 }

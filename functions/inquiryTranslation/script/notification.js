@@ -3,7 +3,7 @@ const option = {
   theme: 'default',
   product: {
     name: 'Paragon Language Service',
-    link: 'https://paragonlanguage.com',
+    link: 'https://www.paragonlanguage.com',
     copyright: 'Copyright © 2017 Paragon Language Service. All rights reserved.',
     logo: 'https://s3-ap-southeast-2.amazonaws.com/paragon-asset/logo/logo_black.png'
   }
@@ -11,7 +11,7 @@ const option = {
 const content = {
   body: {
     greeting: 'Hi',
-    intro: 'We have got a new inquiry',
+    intro: 'We received a new inquiry',
     signature: 'Sincerely',
     table: {
       data: [

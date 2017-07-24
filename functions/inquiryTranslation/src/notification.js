@@ -28,7 +28,7 @@ export default `
           <!-- Logo -->
           <tr>
             <td class="email-masthead" style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 25px 0; text-align: center;" align="center">
-              <a class="email-masthead_name" href="https://paragonlanguage.com" target="_blank" style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; color: #2F3133; font-size: 16px; font-weight: bold; text-decoration: none; text-shadow: 0 1px 0 white;">
+              <a class="email-masthead_name" href="https://www.paragonlanguage.com" target="_blank" style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; color: #2F3133; font-size: 16px; font-weight: bold; text-decoration: none; text-shadow: 0 1px 0 white;">
                 
                   <img src="https://s3-ap-southeast-2.amazonaws.com/paragon-asset/logo/logo_black.png" class="email-logo" style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; max-height: 50px;">
                 
@@ -44,7 +44,7 @@ export default `
                   <td class="content-cell" style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 35px;">
                     <h1 style="margin-top: 0; color: #2F3133; font-size: 19px; font-weight: bold; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box;">Hi,</h1>
                     
-                                              <p style="margin-top: 0; color: #74787E; font-size: 16px; line-height: 1.5em; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box;">We have got a new inquiry</p>
+                                              <p style="margin-top: 0; color: #74787E; font-size: 16px; line-height: 1.5em; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box;">We received a new inquiry</p>
                                           
 
                     <!-- Dictionary -->
