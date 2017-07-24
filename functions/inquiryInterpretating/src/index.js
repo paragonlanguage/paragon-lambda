@@ -36,7 +36,7 @@ export default (e, ctx, cb) => {
   const notificationBody = {
     form: {
       from: `Paragon Language Service <noreply@${domain}>`,
-      to: 'paragonlanguage@mailinator.com',
+      to: 'interpreting@service.paragonlanguage.com',
       cc: 'tonyfu.dev@gmail.com',
       subject: `Hi, we received a new inquery for interpreting from ${data.firstName} ${data.lastName}`,
       html: notificationHtml
