@@ -28,10 +28,6 @@ const content = {
           info: '{{ mobilePhone }}'
         },
         {
-          item: 'Home phone',
-          info: '{{ homePhone }}'
-        },
-        {
           item: 'Email address',
           info: '{{ email }}'
         },

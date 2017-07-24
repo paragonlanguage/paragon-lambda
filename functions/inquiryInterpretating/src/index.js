@@ -5,27 +5,27 @@ import template from 'lodash/template'
 import templateSettings from 'lodash/templateSettings'
 
 export default (e, ctx, cb) => {
-  const payload = e['body-json']
-  const options = e['stage-variables']
-  const apiKey = options.mailgunApi
-  const domain = options.mailgunDomain
+  const payload = e
+  const apiKey = process.env.mailgunApi
+  const domain = process.env.mailgunDomain
 
   const notSupplied = 'Not supplied'
   const defaultValues = {
     firstName: notSupplied,
     lastName: notSupplied,
     mobilePhone: notSupplied,
-    homePhone: notSupplied,
     email: notSupplied,
     companyName: notSupplied,
     companyNumber: notSupplied,
+    fromDate: notSupplied,
+    toDate: notSupplied,
     fromLanguage: notSupplied,
     toLanguage: notSupplied,
-    fromDate: notSupplied,
-    toDate: notSupplied
+    duriation: notSupplied,
+    type: notSupplied
   }
 
-  const data = Object.assign({}, defaultValues, payload)
+  const data = Object.assign(defaultValues, payload)
   templateSettings.interpolate = /{{([\s\S]+?)}}/g
   const compileNotification = template(notificationRaw)
   const notificationHtml = compileNotification(data)
@@ -38,7 +38,7 @@ export default (e, ctx, cb) => {
       from: `Paragon Language Service <noreply@${domain}>`,
       to: 'paragonlanguage@mailinator.com',
       cc: 'tonyfu.dev@gmail.com',
-      subject: `Hi, we have got a new inquery for interpretation from ${data.firstName} ${data.lastName}`,
+      subject: `Hi, we received a new inquery for interpreting from ${data.firstName} ${data.lastName}`,
       html: notificationHtml
     },
     auth: {

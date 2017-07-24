@@ -28,10 +28,6 @@ const content = {
           info: '{{ mobilePhone }}'
         },
         {
-          item: 'Home phone',
-          info: '{{ homePhone }}'
-        },
-        {
           item: 'Email address',
           info: '{{ email }}'
         },
@@ -44,6 +40,22 @@ const content = {
           info: '{{ companyNumber }}'
         },
         {
+          item: 'From the date',
+          info: '{{ fromDate }}'
+        },
+        {
+          item: 'To the date',
+          info: '{{ toDate }}'
+        },
+        {
+          item: 'Duration',
+          info: '{{ duration }}'
+        },
+        {
+          item: 'Type',
+          info: '{{ type }}'
+        },
+        {
           item: 'From language',
           info: '{{ fromLanguage }}'
         },
@@ -51,14 +63,6 @@ const content = {
           item: 'To language',
           info: '{{ toLanguage }}'
         },
-        {
-          item: 'From the date',
-          info: '{{ fromDate }}'
-        },
-        {
-          item: 'To the date',
-          info: '{{ toDate }}'
-        }
       ],
       columns: {
         customWidth: {

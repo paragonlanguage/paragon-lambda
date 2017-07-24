@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "ava",
-    "deploy": "apex --profile paragon deploy",
-    "invoke": "apex --profile paragon invoke"
+    "deploy": "apex --profile paragon deploy --env prod",
+    "invoke": "apex --profile paragon invoke --env prod"
   },
   "repository": {
     "type": "git",

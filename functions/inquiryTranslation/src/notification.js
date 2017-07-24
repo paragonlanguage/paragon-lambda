@@ -107,18 +107,6 @@ export default `
                             <tr>
                               
                                 <td style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 10px 5px; color: #74787E; font-size: 15px; line-height: 18px; text-align: left;" align="left">
-                                  Home phone
-                                </td>
-                              
-                                <td style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 10px 5px; color: #74787E; font-size: 15px; line-height: 18px; text-align: left;" align="left">
-                                  {{ homePhone }}
-                                </td>
-                              
-                            </tr>
-                            
-                            <tr>
-                              
-                                <td style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 10px 5px; color: #74787E; font-size: 15px; line-height: 18px; text-align: left;" align="left">
                                   Email address
                                 </td>
                               

@@ -5,16 +5,15 @@ import template from 'lodash/template'
 import templateSettings from 'lodash/templateSettings'
 
 export default (e, ctx, cb) => {
-  const payload = e['body-json']
-  const options = e['stage-variables']
-  const apiKey = options.mailgunApi
-  const domain = options.mailgunDomain
+  const payload = e
+  const apiKey = process.env.mailgunApi
+  const domain = process.env.mailgunDomain
+
   const notSupplied = 'Not supplied'
   const defaultValues = {
     firstName: notSupplied,
     lastName: notSupplied,
     mobilePhone: notSupplied,
-    homePhone: notSupplied,
     email: notSupplied,
     companyName: notSupplied,
     companyNumber: notSupplied,
@@ -40,7 +39,7 @@ export default (e, ctx, cb) => {
       from: `Paragon Language Service <noreply@${domain}>`,
       to: 'paragonlanguage@mailinator.com',
       cc: 'tonyfu.dev@gmail.com',
-      subject: `Hi, we have got a new inquery for translation from ${data.firstName} ${data.lastName}`,
+      subject: `Hi, we received a new inquery for translation from ${data.firstName} ${data.lastName}`,
       html: notificationHtml
     },
     auth: {
