@@ -1,7 +1,0 @@
-{
-  "description": "function that does hello world",
-  "hooks": {
-    "build": "./build",
-    "clean": "./clean"
-  }
-}

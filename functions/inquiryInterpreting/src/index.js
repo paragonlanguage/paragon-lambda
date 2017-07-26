@@ -8,6 +8,7 @@ export default (e, ctx, cb) => {
   const payload = e
   const apiKey = process.env.mailgunApi
   const domain = process.env.mailgunDomain
+  const ccRecipients = process.env.ccRecipients
 
   const notSupplied = 'Not supplied'
   const defaultValues = {
@@ -37,7 +38,7 @@ export default (e, ctx, cb) => {
     form: {
       from: `Paragon Language Service <noreply@${domain}>`,
       to: 'interpreting@service.paragonlanguage.com',
-      cc: 'tonyfu.dev@gmail.com',
+      cc: process.env.ccRecipients,
       subject: `Hi, we received a new inquery for interpreting from ${data.firstName} ${data.lastName}`,
       html: notificationHtml
     },
@@ -51,7 +52,6 @@ export default (e, ctx, cb) => {
     form: {
       from: `Paragon Language Service <noreply@${domain}>`,
       to: `${data.firstName} <${data.email}>`,
-      cc: 'paragonlanguage@mailinator.com,tonyfu.dev@gmail.com',
       subject: 'Thank you for choosing Paragon',
       html: confirmationHtml
     },
